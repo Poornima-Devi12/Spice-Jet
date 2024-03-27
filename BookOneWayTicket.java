@@ -14,7 +14,7 @@ public class BookOneWayTicket extends ProjectSpecifications{
 	@Test
 	public void bookOneWayTicket() throws InterruptedException {
 		book = new SelectingTypeOfTripPage(driver);
-		book.oneWayTrip("Delhi", "Hyderabad", "28", "March 2024");
+		book.oneWayTrip("Delhi", "Hyderabad", "29", "March 2024");
 	}
 
 
