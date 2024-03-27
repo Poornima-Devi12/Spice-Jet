@@ -23,7 +23,7 @@ public class SelectFlightTest extends ProjectSpecifications{
 	@Test
 	public void bookOneWayTickect() throws InterruptedException, AWTException {
 		bookTicket = new SelectingTypeOfTripPage(driver);
-		bookTicket.oneWayTrip("Delhi", "Hyderabed", "28", "March 2024");
+		bookTicket.oneWayTrip("Delhi", "Hyderabed", "29", "March 2024");
 		Thread.sleep(5000);
 		selectFlight = new SelectFlight(driver);
 		selectFlight.selectFlight();
