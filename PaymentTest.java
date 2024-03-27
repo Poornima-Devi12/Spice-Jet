@@ -23,15 +23,15 @@ public class PaymentTest extends ProjectSpecifications{
   @Test
   public void payment() throws AWTException, InterruptedException {
 	  bookTicket = new SelectingTypeOfTripPage(driver);
-		bookTicket.oneWayTrip("Delhi", "Hyderabed", "28", "March 2024");
+		bookTicket.oneWayTrip("Delhi", "Hyderabed", "29", "March 2024");
 		
 		selectFlight = new SelectFlight(driver);
 		selectFlight.selectFlight();
 		switchWindows("https://www.spicejet.com/booking");
 	
 		passengerDetailsPage= new PassengerDetailsPage(driver);
-		passengerDetailsPage.contactDetails("Test", "Test", "9553645937", "test@mailinator.com", "India");
-		passengerDetailsPage.passengersDetails("Test", "Test", "9553645937");
+		passengerDetailsPage.contactDetails("Test", "Test", "9080256855", "test@mail.com", "India");
+		passengerDetailsPage.passengersDetails("Test", "Test", "9080256855");
 		passengerDetailsPage.clickContinuBtn();
 		
 		switchWindows("https://www.spicejet.com/booking/addons");
